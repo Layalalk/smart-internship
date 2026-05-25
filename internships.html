@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>البحث اليدوي | منصة التدريب الذكية - جدة</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a class="hidden" href="#main">تخطي إلى المحتوى</a>
+
+  <!-- Header -->
+  <header id="top">
+    <nav class="navbar">
+      <div class="container nav-container">
+
+        <div class="logo">
+          <h2>🎓 منصة التدريب الذكية - جدة</h2>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">الرئيسية</a>
+          <a href="internships.html" class="nav-link active">البحث اليدوي</a>
+          <a href="ai-recommendations.html" class="nav-link">التوصيات الذكية</a>
+          <a href="about-us.html" class="nav-link">من نحن</a>
+          <a href="contact-us.html" class="nav-link">اتصل بنا</a>
+
+          <a href="internships-en.html" class="nav-link">English</a>
+
+          <!-- Guest -->
+          <div class="auth-section" id="authSection">
+            <a class="btn btn-outline" href="login.html">تسجيل الدخول</a>
+            <a class="btn btn-primary" href="register.html">إنشاء حساب</a>
+          </div>
+
+          <!-- Logged-in User -->
+          <div class="user-section hidden" id="userSection">
+            <div class="user-info" id="userInfo" role="button" tabindex="0">
+              <div class="user-avatar" id="userAvatar">
+                <svg viewBox="0 0 24 24" fill="#1e3a8a" width="22" height="22" aria-hidden="true">
+                  <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+                </svg>
+              </div>
+              <span id="userName">اسم المستخدم</span>
+              <span class="dropdown-arrow">▼</span>
+            </div>
+
+            <div class="user-dropdown hidden" id="userDropdown">
+              <a href="profile.html">الملف الشخصي</a>
+              <hr>
+              <a href="#" id="logoutBtn">تسجيل الخروج</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Page Header -->
+    <section class="how-it-works page-header" aria-label="عنوان صفحة الفرص">
+      <div class="container">
+        <h1 class="section-title">🔎 البحث اليدوي عن الفرص</h1>
+        <p class="page-lead">
+          استخدم البحث والفلاتر لاستعراض الفرص المتاحة حسب الموقع ونوع البرنامج وطبيعة الجهة.
+        </p>
+      </div>
+    </section>
+
+    <!-- Search + Filters -->
+    <section class="search-section" aria-label="بحث وفلترة الفرص">
+      <div class="container">
+
+        <div class="search-card">
+          <form action="#" method="get">
+            <div class="search-box">
+              <label class="hidden" for="searchInput">ابحث</label>
+              <input
+                type="text"
+                id="searchInput"
+                name="q"
+                placeholder="ابحث باسم الجهة أو المسمى (مثال: Software, Data, UI/UX)..."
+                class="search-input"
+                maxlength="80"
+              >
+              <button class="btn btn-primary" type="submit">
+                <span aria-hidden="true">🔍</span> بحث
+              </button>
+            </div>
+
+            <div class="filters-grid">
+              <div class="filter-group">
+                <label for="cityFilter">📍 الموقع</label>
+                <select id="cityFilter" name="city">
+                  <option value="all">جميع المواقع</option>
+                  <option value="jeddah">مدينة جدة</option>
+                  <option value="remote">عمل عن بُعد</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="locationTypeFilter">🏢 نمط العمل</label>
+                <select id="locationTypeFilter" name="locationType">
+                  <option value="">الكل</option>
+                  <option value="onsite">حضوري </option>
+                  <option value="remote">عن بُعد</option>
+                  <option value="flex">نظام مرن</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="typeFilter">⏱️ نوع البرنامج</label>
+                <select id="typeFilter" name="internType">
+                  <option value="">الكل</option>
+                  <option value="coop">تدريب تعاوني</option>
+                  <option value="summer">تدريب صيفي</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="companyTypeFilter">🏭 طبيعة الجهة</label>
+                <select id="companyTypeFilter" name="companyType">
+                  <option value="">الكل</option>
+                  <option value="startup">منشأة ريادية</option>
+                  <option value="sme">منشأة صغيرة أو متوسطة</option>
+                  <option value="large">مؤسسة كبرى</option>
+                  <option value="gov">قطاع حكومي</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn btn-text" type="reset">مسح الفلاتر</button>
+          </form>
+        </div>
+
+        <!-- Results -->
+        <section aria-label="نتائج البحث">
+          <h2 class="section-title">الفرص المتاحة</h2>
+
+          <div class="internships-grid">
+
+<!-- Card 1 -->
+<article class="internship-card">
+
+
+  <div class="internship-header">
+    <h3 class="internship-title">برنامج التدريب التعاوني</h3>
+    <p class="internship-company">عبداللطيف جميل</p>
+  </div>
+
+  <div class="internship-meta">
+    <span class="meta-tag">حضوري </span>
+    <span class="meta-tag">تدريب تعاوني</span>
+    <span class="meta-tag">قطاع خاص</span>
+  </div>
+
+  <p class="internship-description">
+    برنامج تدريب تعاوني مخصص لطلاب الجامعات لاكتساب الخبرة العملية في بيئة مهنية في مجالات إدارية وتقنية وهندسية ومالية.
+  </p>
+
+  <div class="ai-explanation">
+    <strong>ملخص المتطلبات:</strong> إدارة الموارد البشرية، المبيعات، نظم المعلومات، الهندسة، المالية، المحاسبة، لغة إنجليزية، Microsoft Office، مهارات تواصل.
+  </div>
+
+  <div class="internship-footer">
+    <a class="btn btn-primary apply-btn protected-action" href="https://careers.alj.com/Mobility/job/Jeddah-COOP-Training/857143623/" target="_blank">تقديم</a>
+        <span class="meta-tag"> شهرين</span>
+
+  </div>
+</article>
+
+<!-- Card 2 -->
+<article class="internship-card">
+  
+
+  <div class="internship-header">
+    <h3 class="internship-title">برنامج التدريب التعاوني</h3>
+    <p class="internship-company">مكتبة الملك عبدالعزيز العامة</p>
+  </div>
+
+  <div class="internship-meta">
+    <span class="meta-tag">حضوري </span>
+    <span class="meta-tag">تدريب تعاوني</span>
+    <span class="meta-tag">قطاع حكومي</span>
+  </div>
+
+  <p class="internship-description">
+    توفر هذه الخدمة فرصة للطلاب والطالبات للحصول على تدريب تعاوني واكتساب خبرة عملية داخل مكتبة الملك عبدالعزيز العامة.
+  </p>
+
+  <div class="ai-explanation">
+    <strong>ملخص المتطلبات:</strong> البحث والتحليل، تنظيم المعلومات، التواصل، العمل الجماعي، مهارات الحاسب.
+  </div>
+
+  <div class="internship-footer">
+    <a class="btn btn-primary apply-btn protected-action" href="https://www.kapl.org.sa/e-services/53/collaborative-training" target="_blank">تقديم</a>
+    <span class="meta-tag"> شهرين</span>
+  </div>
+</article>
+<!-- Card 3 -->
+<article class="internship-card">
+ 
+
+  <div class="internship-header">
+    <h3 class="internship-title">برنامج التدريب التعاوني – تطوير الأعمال التقنية</h3>
+    <p class="internship-company">إمداد الخبرات ( علم)</p>
+  </div>
+
+  <div class="internship-meta">
+    <span class="meta-tag">حضوري </span>
+    <span class="meta-tag">تدريب تعاوني</span>
+    <span class="meta-tag">قطاع تقني</span>
+  </div>
+
+  <p class="internship-description">
+    برنامج تدريبي موجه لطلاب وطالبات الجامعات في مجال تطوير الأعمال التقنية، يهدف إلى اكتساب الخبرة العملية في بيئة احترافية.
+  </p>
+
+  <div class="ai-explanation">
+    <strong>ملخص المتطلبات:</strong> علوم الحاسب، تقنية المعلومات، هندسة البرمجيات، نظم المعلومات الإدارية، تقنية المعلومات الإدارية، لغة إنجليزية، /.
+  </div>
+
+  <div class="internship-footer">
+    <a class="btn btn-primary apply-btn protected-action" href="https://people-ksa.com/job/725" target="_blank">تقديم</a>
+    <span class="meta-tag">4 إلى 7 أشهر</span>
+  </div>
+</article>
+          </div>
+
+          <nav class="pagination" aria-label="التنقل بين الصفحات">
+            <button class="page-btn active" type="button">1</button>
+            <button class="page-btn" type="button">2</button>
+            <button class="page-btn" type="button">3</button>
+          </nav>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="تذييل الموقع">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>منصة التدريب الذكية - جدة</h3>
+          <p>منصة تساعد الطلاب على اكتشاف فرص التدريب في مدينة جدة وبناء مستقبلهم المهني.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>روابط سريعة</h4>
+          <a href="index.html">الرئيسية</a>
+          <a href="internships.html">البحث اليدوي</a>
+          <a href="ai-recommendations.html">التوصيات الذكية</a>
+          <a href="about-us.html">من نحن</a>
+          <a href="contact-us.html">اتصل بنا</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>تواصل معنا</h4>
+          <p>📧 info@jeddah-internships.sa</p>
+          <p>📱 +966 59 443 7201</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 منصة التدريب الذكية - جدة | جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../JS/auth.js"></script>
+  <script src="../JS/internships.js"></script>
+</body>
+</html>

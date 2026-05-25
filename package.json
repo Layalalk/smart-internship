@@ -1,0 +1,24 @@
+{
+  "name": "web-project1_2_internship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "UJ-Internship-Platform/JS/server.js",
+  "scripts": {
+    "start": "node UJ-Internship-Platform/JS/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.15.2",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "mongoose": "^9.4.1",
+    "multer": "^2.1.1",
+    "openai": "^6.34.0"
+  }
+}

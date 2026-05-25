@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>من نحن | منصة التدريب الذكية</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a class="hidden" href="#main">تخطي إلى المحتوى</a>
+
+  <!-- Header / Navigation -->
+  <header id="top">
+    <nav class="navbar" aria-label="التنقل الرئيسي">
+      <div class="container nav-container">
+        <div class="logo">
+          <h2>🎓 منصة التدريب الذكية - جدة</h2>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">الرئيسية</a>
+          <a href="internships.html" class="nav-link">البحث اليدوي</a>
+          <a href="ai-recommendations.html" class="nav-link">التوصيات الذكية</a>
+          <a href="about-us.html" class="nav-link active">من نحن</a>
+          <a href="contact-us.html" class="nav-link">اتصل بنا</a>
+
+          <a href="about-us-en.html" class="nav-link">English</a>
+
+          <!-- Guest -->
+          <div class="auth-section" id="authSection">
+            <a class="btn btn-outline" href="login.html">تسجيل الدخول</a>
+            <a class="btn btn-primary" href="register.html">إنشاء حساب</a>
+          </div>
+
+          <!-- Logged-in User -->
+          <div class="user-section hidden" id="userSection">
+            <div class="user-info" id="userInfo" role="button" tabindex="0">
+              <div class="user-avatar">
+                <svg viewBox="0 0 24 24" fill="#1e3a8a" width="22" height="22">
+                  <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+                </svg>
+              </div>
+
+              <span id="userName"></span>
+              <span class="dropdown-arrow">▼</span>
+            </div>
+
+            <div class="user-dropdown hidden" id="userDropdown">
+              <a href="profile.html">الملف الشخصي</a>
+              <hr>
+              <a href="#" id="logoutBtn">تسجيل الخروج</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="mobile-menu-btn" type="button" aria-label="قائمة التنقل">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Page Header -->
+    <section class="how-it-works page-header" aria-label="عنوان صفحة من نحن">
+      <div class="container">
+        <h1 class="section-title">من نحن</h1>
+        <p class="page-lead">
+          منصة تدريب طلابية طوّرها فريق من طالبات جامعة جدة بهدف تسهيل الوصول إلى فرص التدريب التعاوني والصيفي في مدينة جدة،
+          وتقديم تجربة بحث وترشيح أكثر تنظيمًا ووضوحًا.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="search-section" aria-label="محتوى من نحن">
+      <div class="container">
+
+        <!-- Mission / Vision -->
+        <section class="internships-grid centered-grid" aria-label="الرسالة والرؤية">
+          <article class="internship-card">
+            <div class="internship-header">
+              <h2 class="internship-title">📨 رسالتنا</h2>
+              <p class="internship-company">
+                تمكين الباحثين عن التدريب من الوصول إلى فرص مناسبة داخل مدينة جدة عبر منصة تجمع الفرص وتعرض تفاصيلها بصورة واضحة
+                تساعد على اتخاذ قرار مهني أفضل.
+              </p>
+            </div>
+            <p class="internship-description">
+              نعمل على تقليل الوقت والجهد المبذول في البحث من خلال تنظيم المحتوى وإتاحة أدوات تساعد على مقارنة الفرص وفرزها وفق معايير واضحة.
+            </p>
+          </article>
+
+          <article class="internship-card">
+            <div class="internship-header">
+              <h2 class="internship-title">💡 رؤيتنا</h2>
+              <p class="internship-company">
+                أن تصبح المنصة مرجعًا موثوقًا لاكتشاف فرص تدريب نوعية في مدينة جدة تعزز الجاهزية لسوق العمل وتدعم بناء الخبرة.
+              </p>
+            </div>
+            <p class="internship-description">
+              نركز على تجربة استخدام سهلة ومعلومات مرتبة، مع توجه لتطوير التوصيات الذكية لتحسين ملاءمة الفرص مع مهارات المستخدم واهتماماته.
+            </p>
+          </article>
+        </section>
+
+        <!-- What We Offer -->
+        <section class="search-card centered-card" aria-label="ما الذي نقدمه؟">
+          <h2 class="section-title">ماذا نقدم؟</h2>
+          <p class="internship-description">
+            خدمات تساعد المستخدم على الوصول إلى فرص التدريب في مدينة جدة بسرعة وبمعلومات أكثر وضوحًا:
+          </p>
+
+          <div class="service-list" role="list" aria-label="قائمة الخدمات">
+            <button type="button" class="service-item" data-service="browse">🔎 استعراض فرص جدة</button>
+            <button type="button" class="service-item" data-service="filters">🎛️ فلاتر بحث متقدمة</button>
+            <button type="button" class="service-item" data-service="recommendations">🤖 توصيات مبنية على السيرة الذاتية</button>
+            <button type="button" class="service-item" data-service="save">📌 حفظ التفضيلات والفرص</button>
+            <button type="button" class="service-item" data-service="apply">✉️ تسهيل التواصل والتقديم</button>
+          </div>
+        </section>
+
+        <!-- Team Cards -->
+        <section class="search-card centered-card" aria-label="فريق العمل">
+          <h2>فريق العمل</h2>
+          <p class="internship-description">
+            نحن فريق من طالبات جامعة جدة، طورنا هذه المنصة لتقديم حل عملي يساعد في الوصول لفرص التدريب بمدينة جدة بطريقة سهلة ومنظمة.
+          </p>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <div class="team-avatar-section">
+                <div class="team-avatar-wrapper">
+                  <div class="team-avatar">👩‍💻</div>
+                </div>
+                <h3 class="team-member-name">ليال عبدالرحمن</h3>
+                <p class="team-member-role">طالبة — جامعة جدة</p>
+              </div>
+              <div class="team-content">
+                <p class="team-member-bio">
+                  تصميم واجهة المستخدم، تنظيم الصفحات، وضمان تجربة استخدام واضحة ومتسقة.
+                </p>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <div class="team-avatar-section">
+                <div class="team-avatar-wrapper">
+                  <div class="team-avatar">👩‍💻</div>
+                </div>
+                <h3 class="team-member-name">لمى الشهري</h3>
+                <p class="team-member-role">طالبة — جامعة جدة</p>
+              </div>
+              <div class="team-content">
+                <p class="team-member-bio">
+                  تحليل المتطلبات، بناء هيكل المنصة، وتجهيز محتوى الفرص وآلية تصنيفها.
+                </p>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <div class="team-avatar-section">
+                <div class="team-avatar-wrapper">
+                  <div class="team-avatar">👩‍💻</div>
+                </div>
+                <h3 class="team-member-name">ريناد السلمي</h3>
+                <p class="team-member-role">طالبة — جامعة جدة</p>
+              </div>
+              <div class="team-content">
+                <p class="team-member-bio">
+                  توثيق المشروع، تنظيم المحتوى، وضمان توافق المنصة مع متطلبات المقرر ومعايير الجودة.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Team Table -->
+        <section class="search-card" aria-label="جدول فريق العمل">
+          <h2>جدول فريق العمل</h2>
+
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>الاسم</th>
+                  <th>ID</th>
+                  <th>الدور</th>
+                  <th>الرابط</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ليال عبدالرحمن</td>
+                  <td>2313114</td>
+                  <td>تصميم الواجهة</td>
+                  <td>
+                    <a href="https://www.linkedin.com/in/layal-abdulrahman-685731360/" target="_blank" rel="noopener noreferrer">
+                      LinkedIn
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>لمى الشهري</td>
+                  <td>2311250</td>
+                  <td>تصميم الواجهة</td>
+                  <td>
+                    <a href="https://www.linkedin.com/in/lama-suliman-25b3b43a6" target="_blank" rel="noopener noreferrer">
+                      LinkedIn
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ريناد السلمي</td>
+                  <td>2210126</td>
+                  <td>توثيق ومراجعة</td>
+                  <td>
+                    <a href="https://www.linkedin.com/in/renad-alsulami-111a61272/" target="_blank" rel="noopener noreferrer">
+                      LinkedIn
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="search-card contact-cta" aria-label="ابدأ الآن">
+          <h2 class="contact-cta-title">ابدأ الآن</h2>
+          <p class="contact-cta-text">
+            يمكنك استعراض فرص التدريب في مدينة جدة يدويًا أو استخدام التوصيات الذكية للوصول إلى الفرص الأنسب بشكل أسرع.
+          </p>
+          <div class="contact-cta-actions">
+            <a class="btn btn-primary" href="internships.html">البحث اليدوي</a>
+            <a class="btn btn-outline" href="ai-recommendations.html">التوصيات الذكية</a>
+          </div>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="تذييل الموقع">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>منصة التدريب الذكية</h3>
+          <p>مبادرة طلابية لدعم الوصول إلى فرص التدريب داخل مدينة جدة وبناء خبرة مهنية أقوى.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>روابط سريعة</h4>
+          <a href="index.html">الرئيسية</a>
+          <a href="internships.html">البحث اليدوي</a>
+          <a href="ai-recommendations.html">التوصيات الذكية</a>
+          <a href="about-us.html">من نحن</a>
+          <a href="contact-us.html">اتصل بنا</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>تواصل معنا</h4>
+          <p>📧 info@jeddah-internships.sa</p>
+          <p>📱 +966 59 447 7201</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 منصة التدريب الذكية | جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../JS/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الرئيسية | منصة التدريب الذكية - جدة</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a class="hidden" href="#main">تخطي إلى المحتوى</a>
+
+  <!-- Header -->
+  <header id="top">
+    <nav class="navbar">
+      <div class="container nav-container">
+
+        <div class="logo">
+          <h2>🎓 منصة التدريب الذكية - جدة</h2>
+        </div>
+
+        <div class="nav-links">
+          <a href="/index.html" class="nav-link active">الرئيسية</a>
+          <a href="/internships.html" class="nav-link">البحث اليدوي</a>
+          <a href="/ai-recommendations.html" class="nav-link">التوصيات الذكية</a>
+          <a href="/about-us.html" class="nav-link">من نحن</a>
+          <a href="/contact-us.html" class="nav-link">اتصل بنا</a>
+
+          <a href="/index-en.html" class="nav-link">English</a>
+
+          <div class="auth-section" id="authSection">
+            <a class="btn btn-outline" href="/login.html">تسجيل الدخول</a>
+            <a class="btn btn-primary" href="/register.html">إنشاء حساب</a>
+          </div>
+
+          <div class="user-section hidden" id="userSection">
+            <div class="user-info" id="userInfo" role="button" tabindex="0">
+              <div class="user-avatar" id="userAvatar">
+                <svg viewBox="0 0 24 24" fill="#1e3a8a" width="22" height="22" aria-hidden="true">
+                  <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+                </svg>
+              </div>
+              <span id="userName">اسم المستخدم</span>
+              <span class="dropdown-arrow">▼</span>
+            </div>
+
+            <div class="user-dropdown hidden" id="userDropdown">
+              <a href="/profile.html">الملف الشخصي</a>
+              <hr>
+              <a href="#" id="logoutBtn">تسجيل الخروج</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero" id="home" aria-label="مقدمة المنصة">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">اعثر على فرصة التدريب الأنسب لمسارك المهني</h1>
+          <p class="hero-subtitle">
+            منصة تساعد الطلاب والمهتمين على الوصول إلى فرص التدريب التعاوني والصيفي في مدينة جدة،
+            وتقدم تجربة ترشيح تساعد على اختيار الفرصة المناسبة بناءً على المهارات والتخصص والاهتمامات.
+          </p>
+
+          <h2 class="section-title">مميزات المنصة</h2>
+
+          <div class="hero-features">
+            <div class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🤖</div>
+              <h3>ترشيحات دقيقة</h3>
+              <p>ترتيب الفرص حسب مدى التوافق مع الملف، مع توضيح مبسط يشرح سبب الترشيح.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon" aria-hidden="true">📍</div>
+              <h3>خيارات متنوعة للموقع</h3>
+              <p>استعرض فرص التدريب داخل جدة أو فرص عن بُعد أو بنظام حضور مرن وفق متطلبات الجهة.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon" aria-hidden="true">✉️</div>
+              <h3>تجربة تقديم واضحة</h3>
+              <p>تفاصيل منظمة لكل فرصة لتسهيل اتخاذ القرار وتجهيز طلب التقديم بثقة.</p>
+            </div>
+          </div>
+
+          <div class="hero-cta">
+            <a class="btn btn-large btn-primary" href="/ai-recommendations.html">ابدأ بالتوصيات الذكية</a>
+            <a class="btn btn-large btn-outline" href="/internships.html">استعرض الفرص يدويًا</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works" aria-label="شرح طريقة عمل المنصة">
+      <div class="container">
+        <h2 class="section-title">آلية العمل</h2>
+
+        <div class="steps-container">
+          <div class="step">
+            <div class="step-number" aria-hidden="true">1</div>
+            <div class="step-icon" aria-hidden="true">🔐</div>
+            <h3>إنشاء حساب أو تسجيل الدخول</h3>
+            <p>أنشئ حسابك أو سجّل الدخول للوصول السريع إلى خدمات المنصة وحفظ تفضيلاتك.</p>
+          </div>
+
+          <div class="step-arrow" aria-hidden="true">→</div>
+
+          <div class="step">
+            <div class="step-number" aria-hidden="true">2</div>
+            <div class="step-icon" aria-hidden="true">📄</div>
+            <h3>إضافة السيرة الذاتية</h3>
+            <p>تحميل السيرة الذاتية لدعم استخراج المهارات وتقديم ترشيحات أكثر ملاءمة.</p>
+          </div>
+
+          <div class="step-arrow" aria-hidden="true">→</div>
+
+          <div class="step">
+            <div class="step-number" aria-hidden="true">3</div>
+            <div class="step-icon" aria-hidden="true">🎯</div>
+            <h3>استلام الترشيحات</h3>
+            <p>عرض فرص مرتبة حسب التوافق مع تقديم تفسير مختصر يساعد على القرار.</p>
+          </div>
+
+          <div class="step-arrow" aria-hidden="true">→</div>
+
+          <div class="step">
+            <div class="step-number" aria-hidden="true">4</div>
+            <div class="step-icon" aria-hidden="true">✉️</div>
+            <h3>التقديم والمتابعة</h3>
+            <p>مراجعة المتطلبات والتفاصيل ثم اختيار الفرص المناسبة وإكمال خطوة التقديم.</p>
+          </div>
+        </div>
+
+        <div class="search-card value-card">
+          <h2 class="value-title">قيمة المنصة</h2>
+          <p class="value-text">
+            توحيد فرص التدريب في نقطة واحدة، وتقليل وقت البحث، وتقديم تجربة ترشيح تساعد المستخدم على اختيار الفرصة المناسبة
+            بشكل أسرع وأكثر وضوحًا.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="تذييل الموقع">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>منصة التدريب الذكية - جدة</h3>
+          <p>نساعد المستخدمين على الوصول لفرص تدريب مناسبة في مدينة جدة لتطوير الخبرة وبناء مسار مهني أقوى.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>روابط سريعة</h4>
+          <a href="/index.html">الرئيسية</a>
+          <a href="/internships.html">البحث اليدوي</a>
+          <a href="/ai-recommendations.html">التوصيات الذكية</a>
+          <a href="/about-us.html">من نحن</a>
+          <a href="/contact-us.html">اتصل بنا</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>تواصل معنا</h4>
+          <p>📧 info@jeddah-internships.sa</p>
+          <p>📱 +966 59 447 7201</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 منصة التدريب الذكية - جدة | جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../JS/auth.js"></script>
+</body>
+</html>

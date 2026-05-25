@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التوصيات الذكية | منصة التدريب الذكية - جدة</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a class="hidden" href="#main">تخطي إلى المحتوى</a>
+
+  <header id="top">
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="logo">
+          <h2>🎓 منصة التدريب الذكية - جدة</h2>
+        </div>
+
+        <div class="nav-links">
+          <a href="/index.html" class="nav-link">الرئيسية</a>
+          <a href="/internships.html" class="nav-link">البحث اليدوي</a>
+          <a href="/ai-recommendations.html" class="nav-link active">التوصيات الذكية</a>
+          <a href="/about-us.html" class="nav-link">من نحن</a>
+          <a href="/contact-us.html" class="nav-link">اتصل بنا</a>
+          <a href="/ai-recommendations-en.html" class="nav-link">English</a>
+
+          <div class="auth-section" id="authSection">
+            <a class="btn btn-outline" href="/login.html">تسجيل الدخول</a>
+            <a class="btn btn-primary" href="/register.html">إنشاء حساب</a>
+          </div>
+
+          <div class="user-section hidden" id="userSection">
+            <div class="user-info" id="userInfo" role="button" tabindex="0">
+              <div class="user-avatar" id="userAvatar">
+                <svg viewBox="0 0 24 24" fill="#1e3a8a" width="22" height="22" aria-hidden="true">
+                  <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+                </svg>
+              </div>
+              <span id="userName">اسم المستخدم</span>
+              <span class="dropdown-arrow">▼</span>
+            </div>
+
+            <div class="user-dropdown hidden" id="userDropdown">
+              <a href="/profile.html">الملف الشخصي</a>
+              <hr>
+              <a href="#" id="logoutBtn">تسجيل الخروج</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="how-it-works page-header" aria-label="عنوان صفحة التوصيات">
+      <div class="container">
+        <h1 class="section-title">🤖 التوصيات الذكية</h1>
+        <p class="page-lead">
+          قم بتحميل سيرتك الذاتية ليتم استخراج المهارات والمؤهلات وعرض الفرص الأكثر توافقًا مع ملفك بشكل منظم وواضح داخل مدينة جدة.
+        </p>
+      </div>
+    </section>
+
+    <section class="search-section" aria-label="رفع السيرة الذاتية">
+      <div class="container">
+
+        <section class="search-card" aria-label="تحميل السيرة الذاتية">
+          <h2 class="card-title">تحميل السيرة الذاتية</h2>
+          <p class="card-text">
+            ندعم ملفات PDF و DOCX. سيتم استخدام المعلومات المستخرجة لتحسين دقة التوصيات وتحديد أفضل الفرص المناسبة.
+          </p>
+
+          <input type="file" id="cvFile" class="file-input" accept=".pdf,.doc,.docx">
+
+          <button
+            class="upload-area"
+            type="button"
+            onclick="document.getElementById('cvFile').click()"
+            aria-label="اختيار ملف السيرة الذاتية"
+          >
+            <span class="upload-icon" aria-hidden="true">📄</span>
+            <span class="upload-title">اختر ملف السيرة الذاتية</span>
+            <span class="upload-hint">PDF أو DOCX — حد أقصى 5MB</span>
+          </button>
+
+          <p id="fileName" class="note-center"></p>
+
+          <div class="actions-center">
+            <button class="btn btn-primary protected-analyze" id="analyzeBtn" type="button">تحليل السيرة الذاتية</button>
+            <button type="button" id="removeFile" class="btn btn-outline hidden">حذف الملف</button>
+            <a class="btn btn-outline" href="/internships.html">الانتقال للبحث اليدوي</a>
+          </div>
+
+          <p class="note-center">
+            سيتم عرض المهارات المستخرجة ونتائج التوصيات في الأسفل.
+          </p>
+        </section>
+
+        <section class="search-card hidden" id="analysisBox" aria-label="نتيجة تحليل السيرة الذاتية">
+          <h2 class="card-title">نتيجة تحليل السيرة الذاتية</h2>
+
+          <div class="ai-summary" id="analysisSummary">
+            سيتم عرض ملخص التحليل هنا.
+          </div>
+
+          <h3 class="section-subtitle">المهارات المستخرجة</h3>
+          <div class="internship-meta" id="skillsList"></div>
+        </section>
+
+        <section id="recommendationsSection" class="hidden">
+          <h2 class="section-subtitle">الفرص الأكثر توافقًا</h2>
+          <p class="section-subtext">
+            بعد تحليل السيرة الذاتية ستظهر الفرص المناسبة حسب المهارات المستخرجة.
+          </p>
+
+          <section class="internships-grid" id="recommendationsGrid" aria-label="نتائج التوصيات"></section>
+        </section>
+
+        <section class="search-card note-card" aria-label="ملاحظة">
+          <h2 class="note-title">ملاحظة</h2>
+          <p class="note-text">
+            يتم تحديث التوصيات حسب البيانات المتاحة ومتطلبات الجهات. يمكنك دائمًا استخدام صفحة البحث اليدوي لاستعراض جميع الفرص.
+          </p>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="تذييل الموقع">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>منصة التدريب الذكية - جدة</h3>
+          <p>منصة طلابية تهدف إلى تسهيل الوصول إلى فرص التدريب في مدينة جدة وبناء خبرة مهنية أقوى.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>روابط سريعة</h4>
+          <a href="/index.html">الرئيسية</a>
+          <a href="/internships.html">البحث اليدوي</a>
+          <a href="/ai-recommendations.html">التوصيات الذكية</a>
+          <a href="/about-us.html">من نحن</a>
+          <a href="/contact-us.html">اتصل بنا</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>تواصل معنا</h4>
+          <p>📧 info@jeddah-internships.sa</p>
+          <p>📱 +966 59 447 7201</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 منصة التدريب الذكية - جدة | جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../JS/auth.js"></script>
+  <script src="../JS/ai.js"></script>
+</body>
+</html>

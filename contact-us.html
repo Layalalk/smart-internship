@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا | منصة التدريب الذكية</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a class="hidden" href="#main">تخطي إلى المحتوى</a>
+
+  <!-- Header / Navigation -->
+  <header id="top">
+    <nav class="navbar" aria-label="التنقل الرئيسي">
+      <div class="container nav-container">
+        <div class="logo">
+          <h2>🎓 منصة التدريب الذكية - جدة</h2>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">الرئيسية</a>
+          <a href="internships.html" class="nav-link">البحث اليدوي</a>
+          <a href="ai-recommendations.html" class="nav-link">التوصيات الذكية</a>
+          <a href="about-us.html" class="nav-link">من نحن</a>
+          <a href="contact-us.html" class="nav-link active">اتصل بنا</a>
+          
+          <a href="contact-us-en.html" class="nav-link">English</a>
+
+          <!-- Guest -->
+          <div class="auth-section" id="authSection">
+            <a class="btn btn-outline" href="login.html">تسجيل الدخول</a>
+            <a class="btn btn-primary" href="register.html">إنشاء حساب</a>
+          </div>
+
+          <!-- Logged-in User -->
+          <div class="user-section hidden" id="userSection">
+            <div class="user-info" id="userInfo" role="button" tabindex="0">
+              <div class="user-avatar">
+                <svg viewBox="0 0 24 24" fill="#1e3a8a" width="22" height="22">
+                  <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+                </svg>
+              </div>
+
+              <span id="userName"></span>
+              <span class="dropdown-arrow">▼</span>
+            </div>
+
+            <div class="user-dropdown hidden" id="userDropdown">
+              <a href="profile.html">الملف الشخصي</a>
+              <hr>
+              <a href="#" id="logoutBtn">تسجيل الخروج</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="mobile-menu-btn" type="button" aria-label="قائمة التنقل">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Page Header -->
+    <section class="how-it-works page-header" aria-label="عنوان صفحة التواصل">
+      <div class="container">
+        <h1 class="section-title">اتصل بنا</h1>
+        <p class="page-lead">
+          نرحّب باستفسارات الطلاب والمهتمين بفرص التدريب في مدينة جدة، ونسعد بدعمكم فيما يخص الفرص وتجربة استخدام المنصة.
+        </p>
+      </div>
+    </section>
+
+    <section class="search-section" aria-label="نموذج التواصل ومعلومات الاتصال">
+      <div class="container">
+        <div class="internships-grid contact-grid">
+
+          <!-- Contact Info -->
+          <article class="internship-card">
+            <div class="internship-header">
+              <h2 class="internship-title">📌 معلومات التواصل</h2>
+              <p class="internship-company">
+                القنوات الرسمية للاستفسارات والملاحظات المتعلقة بالمنصة.
+              </p>
+            </div>
+
+            <div class="internship-meta">
+              <span class="meta-tag">📍 مدينة جدة</span>
+              <span class="meta-tag">🎓 فرص تدريب</span>
+              <span class="meta-tag">⏱️ الرد خلال أيام العمل</span>
+            </div>
+
+            <p class="internship-description">
+              يمكنكم التواصل عبر البريد أو الهاتف، أو إرسال رسالة مباشرة من خلال نموذج التواصل.
+            </p>
+
+            <div class="info-card">
+              <div class="info-item">
+                <p class="info-title">البريد الإلكتروني</p>
+                <p class="info-value">📧 info@jeddah-internships.sa</p>
+              </div>
+
+              <div class="info-item">
+                <p class="info-title">رقم التواصل</p>
+                <p class="info-value">📱 +966 59 447 7201</p>
+              </div>
+
+              <div class="info-item">
+                <p class="info-title">نطاق الخدمة</p>
+                <p class="info-value">🌐 منصة تدريب مخصصة لفرص مدينة جدة</p>
+              </div>
+            </div>
+
+            <div class="ai-explanation">
+              <strong>تنويه:</strong> يفضّل استخدام بريد إلكتروني رسمي لتسهيل التواصل وتسريع الرد.
+            </div>
+          </article>
+
+          <!-- Contact Form -->
+          <article class="internship-card">
+            <div class="internship-header">
+              <h2 class="internship-title">📩 نموذج التواصل</h2>
+              <p class="internship-company">
+                املأ البيانات التالية لإرسال رسالتك، وسيتم التواصل معك عبر البريد الإلكتروني.
+              </p>
+            </div>
+
+            <form action="#" method="post" aria-label="نموذج إرسال رسالة" class="contact-form">
+              <!-- First / Last name -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">الاسم الأول</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="مثال: ليال"
+                    maxlength="30"
+                    pattern="[A-Za-z\u0600-\u06FF\s]+"
+                    title="الاسم الأول يجب أن يحتوي على حروف فقط"
+                    required
+                    autocomplete="given-name"
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="lastName">اسم العائلة</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="مثال: عبدالرحمن"
+                    maxlength="30"
+                    pattern="[A-Za-z\u0600-\u06FF\s]+"
+                    title="اسم العائلة يجب أن يحتوي على حروف فقط"
+                    required
+                    autocomplete="family-name"
+                  >
+                </div>
+              </div>
+
+              <!-- Gender -->
+              <div class="form-group">
+                <label for="gender">الجنس</label>
+                <select id="gender" name="gender" required>
+                  <option value="" selected disabled>اختر</option>
+                  <option value="female">أنثى</option>
+                  <option value="male">ذكر</option>
+                  <option value="prefer_not_say">أفضل عدم الإفصاح</option>
+                </select>
+              </div>
+
+              <!-- Mobile + DOB -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="mobile">رقم الجوال</label>
+                  <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    placeholder="مثال: 05XXXXXXXX"
+                    maxlength="15"
+                    pattern="05[0-9]{8}"
+                    title="رقم الجوال يجب أن يبدأ بـ 05 ويتكون من 10 أرقام"
+                    required
+                    autocomplete="tel"
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="dob">تاريخ الميلاد</label>
+                  <input
+                    type="date"
+                    id="dob"
+                    name="dob"
+                    required
+                    autocomplete="bday"
+                    dir="ltr"
+                    lang="en"
+                  >
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="مثال: name@example.com"
+                  maxlength="80"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="أدخل بريداً إلكترونياً صحيحاً (مثال: name@example.com)"
+                  required
+                  autocomplete="email"
+                >
+              </div>
+
+              <!-- Language -->
+              <div class="form-group">
+                <label for="language">لغة التواصل المفضلة</label>
+                <select id="language" name="language" required>
+                  <option value="" selected disabled>اختر</option>
+                  <option value="ar">العربية</option>
+                  <option value="en">English</option>
+                  <option value="fr">Français</option>
+                </select>
+              </div>
+
+              <!-- Category -->
+              <div class="form-group">
+                <label for="category">موضوع الرسالة</label>
+                <select id="category" name="category" required>
+                  <option value="" selected disabled>اختر موضوع الرسالة</option>
+                  <option value="general">استفسار عام</option>
+                  <option value="opportunity">استفسار عن فرصة تدريب</option>
+                  <option value="suggestion">اقتراح / تحسين</option>
+                  <option value="issue">مشكلة تقنية</option>
+                </select>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="message">نص الرسالة</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="7"
+                  placeholder="اكتب تفاصيل رسالتك هنا..."
+                  maxlength="800"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">إرسال</button>
+                <button class="btn btn-outline" type="reset">مسح</button>
+              </div>
+
+              <p class="form-note">
+                سيتم استخدام بياناتك لأغراض التواصل والدعم فقط.
+              </p>
+            </form>
+
+            <div class="ai-explanation">
+              <strong>ملاحظة:</strong> إذا كانت رسالتك مرتبطة بفرصة تدريب محددة، اذكر اسم الجهة والمسمى ومدة التدريب لتسريع المساعدة.
+            </div>
+          </article>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="search-card contact-cta">
+          <h2 class="contact-cta-title">استعرض الفرص</h2>
+          <p class="contact-cta-text">
+            انتقل إلى صفحات الفرص لاختيار الأنسب: البحث اليدوي أو التوصيات الذكية.
+          </p>
+          <div class="contact-cta-actions">
+            <a class="btn btn-primary" href="internships.html">البحث اليدوي</a>
+            <a class="btn btn-outline" href="ai-recommendations.html">التوصيات الذكية</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="تذييل الموقع">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>منصة التدريب الذكية</h3>
+          <p>مبادرة طلابية تهدف إلى تسهيل الوصول إلى فرص التدريب في مدينة جدة وبناء خبرة مهنية أقوى.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>روابط سريعة</h4>
+          <a href="index.html">الرئيسية</a>
+          <a href="internships.html">البحث اليدوي</a>
+          <a href="ai-recommendations.html">التوصيات الذكية</a>
+          <a href="about-us.html">من نحن</a>
+          <a href="contact-us.html">اتصل بنا</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>تواصل معنا</h4>
+          <p>📧 info@jeddah-internships.sa</p>
+          <p>📱 +966 59 447 7201</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 منصة التدريب الذكية | جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../JS/auth.js"></script>
+  <script src="../JS/contact.js"></script>
+
+</body>
+</html>

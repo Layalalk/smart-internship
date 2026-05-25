@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إنشاء حساب | منصة التدريب الذكية - جدة</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a class="hidden" href="#main">تخطي إلى المحتوى</a>
+
+  <header id="top">
+    <nav class="navbar" aria-label="التنقل الرئيسي">
+      <div class="container nav-container">
+        <div class="logo">
+          <h2>🎓 منصة التدريب الذكية - جدة</h2>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">الرئيسية</a>
+          <a href="internships.html" class="nav-link">البحث اليدوي</a>
+          <a href="ai-recommendations.html" class="nav-link">التوصيات الذكية</a>
+          <a href="about-us.html" class="nav-link">من نحن</a>
+          <a href="contact-us.html" class="nav-link">اتصل بنا</a>
+          <a href="register-en.html" class="nav-link">English</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="search-section" aria-label="إنشاء حساب">
+      <div class="container">
+        <div class="search-card" style="max-width: 700px; margin: 0 auto;">
+          <h1 class="section-title">إنشاء حساب جديد</h1>
+          <p class="page-lead" style="margin-bottom: 2rem;">
+            أنشئ حسابك للوصول إلى خدمات المنصة وحفظ تفضيلاتك.
+          </p>
+
+          <form class="register-form" id="registerForm" novalidate>
+            <div class="form-group">
+              <label for="name">الاسم الكامل</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="search-input"
+                placeholder="مثال: ليال عبدالرحمن"
+                maxlength="60"
+                required
+              >
+            </div>
+
+            <div class="form-group" style="margin-top: 1rem;">
+              <label for="email">البريد الإلكتروني</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="search-input"
+                placeholder="example@email.com"
+                maxlength="80"
+                required
+              >
+            </div>
+
+            <div class="form-group" style="margin-top: 1rem;">
+              <label for="password">كلمة المرور</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="search-input"
+                placeholder="أدخل كلمة المرور"
+                minlength="6"
+                required
+              >
+            </div>
+
+            <div class="form-group" style="margin-top: 1rem;">
+              <label for="confirmPassword">تأكيد كلمة المرور</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                class="search-input"
+                placeholder="أعد كتابة كلمة المرور"
+                minlength="6"
+                required
+              >
+            </div>
+
+            <div class="form-actions" style="margin-top: 1.5rem;">
+              <button type="submit" class="btn btn-primary">إنشاء حساب</button>
+              <button type="reset" class="btn btn-outline">مسح</button>
+            </div>
+
+            <p class="form-note">
+              لديك حساب بالفعل؟
+              <a href="login.html">تسجيل الدخول</a>
+            </p>
+          </form>
+
+          <div class="ai-explanation" style="margin-top: 1.5rem;">
+            <strong>ملاحظة:</strong>
+            سيتم حفظ بياناتك بشكل آمن لاستخدامها في تسجيل الدخول والخدمات المرتبطة بحسابك.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="تذييل الموقع">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h2>منصة التدريب الذكية - جدة</h2>
+          <p>نساعد المستخدمين على الوصول لفرص تدريب مناسبة في مدينة جدة لتطوير الخبرة وبناء مسار مهني أقوى.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>روابط سريعة</h3>
+          <a href="index.html">الرئيسية</a>
+          <a href="internships.html">البحث اليدوي</a>
+          <a href="ai-recommendations.html">التوصيات الذكية</a>
+          <a href="about-us.html">من نحن</a>
+          <a href="contact-us.html">اتصل بنا</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>تواصل معنا</h3>
+          <p>📧 info@jeddah-internships.sa</p>
+          <p>📱 +966 59 447 7201</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 منصة التدريب الذكية - جدة | جميع الحقوق محفوظة</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../JS/register.js"></script>
+</body>
+</html>

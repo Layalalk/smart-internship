@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Smart Internship Platform</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a class="hidden" href="#main">Skip to content</a>
+
+  <!-- Header / Navigation -->
+  <header id="top">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container nav-container">
+        <div class="logo">
+          <h2>🎓 Smart Internship Platform - Jeddah</h2>
+        </div>
+
+        <div class="nav-links">
+          <a href="index-en.html" class="nav-link">Home</a>
+          <a href="internships-en.html" class="nav-link">Manual Search</a>
+          <a href="ai-recommendations-en.html" class="nav-link">Smart Recommendations</a>
+          <a href="about-us-en.html" class="nav-link">About Us</a>
+
+          <a href="contact-us-en.html" class="nav-link active">Contact</a>
+
+          <!-- Language -->
+          <a href="contact-us.html" class="nav-link">العربية</a>
+
+          <!-- Guest -->
+          <div class="auth-section" id="authSection">
+            <a class="btn btn-outline" href="login-en.html">Login</a>
+            <a class="btn btn-primary" href="register-en.html">Create Account</a>
+          </div>
+
+          <!-- Logged user -->
+          <div class="user-section hidden" id="userSection">
+            <div class="user-info" id="userInfo" role="button" tabindex="0">
+              <div class="user-avatar">
+                <svg viewBox="0 0 24 24" fill="#1e3a8a" width="22" height="22">
+                  <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+                </svg>
+              </div>
+
+              <span id="userName"></span>
+              <span class="dropdown-arrow">▼</span>
+            </div>
+
+            <div class="user-dropdown hidden" id="userDropdown">
+              <a href="profile-en.html">Profile</a>
+              <hr>
+              <a href="#" id="logoutBtn">Logout</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="mobile-menu-btn" type="button" aria-label="Navigation menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Page Header -->
+    <section class="how-it-works page-header" aria-label="Contact page heading">
+      <div class="container">
+        <h1 class="section-title">Contact Us</h1>
+        <p class="page-lead">
+          We welcome questions from students and anyone interested in internship opportunities in Jeddah.
+          We are happy to support you regarding opportunities and your experience using the platform.
+        </p>
+      </div>
+    </section>
+
+    <section class="search-section" aria-label="Contact form and contact information">
+      <div class="container">
+        <div class="internships-grid contact-grid">
+
+          <!-- Contact Info (FIRST) -->
+          <article class="internship-card">
+            <div class="internship-header">
+              <h2 class="internship-title">📌 Contact Information</h2>
+              <p class="internship-company">
+                Official channels for inquiries and feedback related to the platform.
+              </p>
+            </div>
+
+            <div class="internship-meta">
+              <span class="meta-tag">📍 Jeddah</span>
+              <span class="meta-tag">🎓 Internship Opportunities</span>
+              <span class="meta-tag">⏱️ Reply on business days</span>
+            </div>
+
+            <p class="internship-description">
+              You can contact us by email or phone, or send a message directly using the form.
+            </p>
+
+            <div class="info-card">
+              <div class="info-item">
+                <p class="info-title">Email</p>
+                <p class="info-value">📧 info@jeddah-internships.sa</p>
+              </div>
+
+              <div class="info-item">
+                <p class="info-title">Phone</p>
+                <p class="info-value">📱 +966 59 447 7201</p>
+              </div>
+
+              <div class="info-item">
+                <p class="info-title">Service Scope</p>
+                <p class="info-value">🌐 Internship platform focused on Jeddah opportunities</p>
+              </div>
+            </div>
+
+            <div class="ai-explanation">
+              <strong>Notice:</strong> Using an official email address is recommended to speed up communication and responses.
+            </div>
+          </article>
+
+          <!-- Contact Form (SECOND) -->
+          <article class="internship-card">
+            <div class="internship-header">
+              <h2 class="internship-title">📩 Contact Form</h2>
+              <p class="internship-company">
+                Fill in the form below to send your message. We will reach out to you via email.
+              </p>
+            </div>
+
+            <form action="#" method="post" aria-label="Send message form" class="contact-form">
+              <!-- First / Last name -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="e.g., Layal"
+                    maxlength="30"
+                    pattern="[A-Za-z\u0600-\u06FF\s]+"
+                    title="First name should contain letters only"
+                    required
+                    autocomplete="given-name"
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="e.g., Abdulrahman"
+                    maxlength="30"
+                    pattern="[A-Za-z\u0600-\u06FF\s]+"
+                    title="Last name should contain letters only"
+                    required
+                    autocomplete="family-name"
+                  >
+                </div>
+              </div>
+
+              <!-- Gender -->
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                  <option value="" selected disabled>Select</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  <option value="prefer_not_say">Prefer not to say</option>
+                </select>
+              </div>
+
+              <!-- Mobile + DOB -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="mobile">Mobile Number</label>
+                  <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    placeholder="e.g., 05XXXXXXXX"
+                    maxlength="15"
+                    pattern="05[0-9]{8}"
+                    title="Mobile must start with 05 and be 10 digits"
+                    required
+                    autocomplete="tel"
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="dob">Date of Birth</label>
+                  <input
+                    type="date"
+                    id="dob"
+                    name="dob"
+                    required
+                    autocomplete="bday"
+                    lang="en"
+                  >
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="e.g., name@example.com"
+                  maxlength="80"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  title="Enter a valid email (e.g., name@example.com)"
+                  required
+                  autocomplete="email"
+                >
+              </div>
+
+              <!-- Language -->
+              <div class="form-group">
+                <label for="language">Preferred Communication Language</label>
+                <select id="language" name="language" required>
+                  <option value="" selected disabled>Select</option>
+                  <option value="ar">Arabic</option>
+                  <option value="en">English</option>
+                  <option value="fr">French</option>
+                </select>
+              </div>
+
+              <!-- Category -->
+              <div class="form-group">
+                <label for="category">Message Topic</label>
+                <select id="category" name="category" required>
+                  <option value="" selected disabled>Select a topic</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="opportunity">Opportunity Inquiry</option>
+                  <option value="suggestion">Suggestion / Improvement</option>
+                  <option value="issue">Technical Issue</option>
+                </select>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="7"
+                  placeholder="Write your message details here..."
+                  maxlength="800"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Send</button>
+                <button class="btn btn-outline" type="reset">Reset</button>
+              </div>
+
+              <p class="form-note">
+                Your data will be used for support and communication purposes only.
+              </p>
+            </form>
+
+            <div class="ai-explanation">
+              <strong>Note:</strong> If your message is related to a specific internship opportunity, please include the
+              company name, role title, and duration to help us assist you faster.
+            </div>
+          </article>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="search-card contact-cta">
+          <h2 class="contact-cta-title">Browse Opportunities</h2>
+          <p class="contact-cta-text">
+            Go to the opportunities pages to choose what fits you best: Manual Search or Smart Recommendations.
+          </p>
+          <div class="contact-cta-actions">
+            <a class="btn btn-primary" href="internships-en.html">Manual Search</a>
+            <a class="btn btn-outline" href="ai-recommendations-en.html">Smart Recommendations</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Website footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Smart Internship Platform</h3>
+          <p>A student initiative to support access to internship opportunities in Jeddah and build stronger career experience.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="index-en.html">Home</a>
+          <a href="internships-en.html">Manual Search</a>
+          <a href="ai-recommendations-en.html">Smart Recommendations</a>
+          <a href="about-us-en.html">About Us</a>
+          <a href="contact-us-en.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📧 info@jeddah-internships.sa</p>
+          <p>📱 +966 59 447 7201</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Smart Internship Platform | All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../JS/auth.js"></script>
+  <script src="../JS/contact.js"></script>
+
+</body>
+</html>

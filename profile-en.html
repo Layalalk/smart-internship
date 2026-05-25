@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+
+<header id="top">
+  <nav class="navbar">
+    <div class="container nav-container">
+
+      <div class="logo">
+        <h2>🎓 Smart Internship Platform - Jeddah</h2>
+      </div>
+
+      <div class="nav-links">
+        <a href="/index-en.html" class="nav-link">Home</a>
+        <a href="/internships-en.html" class="nav-link">Manual Search</a>
+        <a href="/ai-recommendations-en.html" class="nav-link">Smart Recommendations</a>
+        <a href="#" id="langSwitch" class="nav-link">العربية</a>
+
+        <div class="auth-section" id="authSection">
+          <a class="btn btn-outline" href="/login-en.html">Login</a>
+          <a class="btn btn-primary" href="/register-en.html">Create Account</a>
+        </div>
+
+        <div class="user-section hidden" id="userSection">
+          <div class="user-info" id="userInfo">
+            <span id="userName"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="search-section">
+    <div class="container">
+
+      <div class="search-card profile-card">
+
+        <div class="profile-cover"></div>
+
+        <div class="profile-avatar">
+          <svg viewBox="0 0 24 24" fill="#1e3a8a" width="46" height="46">
+            <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+          </svg>
+        </div>
+
+        <h1 class="profile-title">Profile</h1>
+
+        <div class="profile-info">
+          <div class="profile-info-item">
+            <span><strong>Name</strong></span>
+            <span id="profileName">...</span>
+          </div>
+
+          <div class="profile-info-item">
+            <span><strong>Email</strong></span>
+            <span id="profileEmail">...</span>
+          </div>
+
+          <div class="profile-info-item">
+            <span><strong>Status</strong></span>
+            <span>Active</span>
+          </div>
+        </div>
+
+        <div class="profile-actions">
+          <button class="btn btn-primary" id="editBtn" type="button">
+            Edit Info
+          </button>
+
+          <button class="btn btn-primary" id="passwordBtn" type="button">
+            Change Password
+          </button>
+
+          <button class="btn btn-outline profile-logout" id="logoutBtn" type="button">
+            Logout
+          </button>
+        </div>
+
+        <div id="editForm" class="hidden" style="margin-top: 1rem;">
+          <div class="form-group">
+            <label for="editName">New Name</label>
+            <input type="text" id="editName" class="search-input" placeholder="Enter new name">
+          </div>
+
+          <div class="form-group" style="margin-top: 1rem;">
+            <label for="editEmail">New Email</label>
+            <input type="email" id="editEmail" class="search-input" placeholder="example@email.com">
+          </div>
+
+          <button class="btn btn-primary" id="saveBtn" type="button" style="margin-top: 1rem;">
+            Save
+          </button>
+
+          <button class="btn btn-outline" id="cancelEditBtn" type="button" style="margin-top: 0.5rem;">
+            Cancel
+          </button>
+        </div>
+
+        <div id="passwordForm" class="hidden" style="margin-top: 1rem;">
+          <div class="form-group">
+            <label for="currentPassword">Current Password</label>
+            <input type="password" id="currentPassword" class="search-input" placeholder="Enter current password">
+          </div>
+
+          <div class="form-group" style="margin-top: 1rem;">
+            <label for="newPassword">New Password</label>
+            <input type="password" id="newPassword" class="search-input" placeholder="Enter new password">
+          </div>
+
+          <div class="form-group" style="margin-top: 1rem;">
+            <label for="confirmNewPassword">Confirm New Password</label>
+            <input type="password" id="confirmNewPassword" class="search-input" placeholder="Confirm new password">
+          </div>
+
+          <button class="btn btn-primary" id="savePasswordBtn" type="button" style="margin-top: 1rem;">
+            Save Password
+          </button>
+
+          <button class="btn btn-outline" id="cancelPasswordBtn" type="button" style="margin-top: 0.5rem;">
+            Cancel
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<script src="../JS/profile.js"></script>
+<script src="../JS/auth.js"></script>
+
+</body>
+</html>

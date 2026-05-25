@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Smart Internship Platform - Jeddah</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a class="hidden" href="#main">Skip to content</a>
+
+  <header id="top">
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="container nav-container">
+        <div class="logo">
+          <h2>🎓 Smart Internship Platform - Jeddah</h2>
+        </div>
+
+        <div class="nav-links">
+          <a href="index-en.html" class="nav-link">Home</a>
+          <a href="internships-en.html" class="nav-link">Manual Search</a>
+          <a href="ai-recommendations-en.html" class="nav-link">Smart Recommendations</a>
+          <a href="about-us-en.html" class="nav-link">About Us</a>
+          <a href="contact-us-en.html" class="nav-link">Contact</a>
+          <a href="login.html" class="nav-link">العربية</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="search-section" aria-label="Login">
+      <div class="container">
+        <div class="search-card" style="max-width: 700px; margin: 0 auto;">
+          <h1 class="section-title">Login</h1>
+          <p class="page-lead" style="margin-bottom: 2rem;">
+            Enter your details to access your account and platform services.
+          </p>
+
+          <form class="login-form" id="loginForm" novalidate>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="search-input"
+                placeholder="example@email.com"
+                maxlength="80"
+                required
+              >
+            </div>
+
+            <div class="form-group" style="margin-top: 1rem;">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="search-input"
+                placeholder="Enter your password"
+                minlength="6"
+                required
+              >
+            </div>
+
+            <div class="form-actions" style="margin-top: 1.5rem;">
+              <button type="submit" class="btn btn-primary">Login</button>
+              <button type="reset" class="btn btn-outline">Reset</button>
+            </div>
+
+            <p class="form-note">
+              Don’t have an account?
+              <a href="register-en.html">Register</a>
+            </p>
+          </form>
+
+          <div class="ai-explanation" style="margin-top: 1.5rem;">
+            <strong>Note:</strong>
+            Your email and password will be verified against the database.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h2>Smart Internship Platform - Jeddah</h2>
+          <p>Helping users find suitable internship opportunities in Jeddah to build stronger career paths.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="index-en.html">Home</a>
+          <a href="internships-en.html">Manual Search</a>
+          <a href="ai-recommendations-en.html">Smart Recommendations</a>
+          <a href="about-us-en.html">About Us</a>
+          <a href="contact-us-en.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>📧 info@jeddah-internships.sa</p>
+          <p>📱 +966 59 447 7201</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Smart Internship Platform - Jeddah | All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../JS/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual Search | Smart Training Platform - Jeddah</title>
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a class="hidden" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header id="top">
+    <nav class="navbar">
+      <div class="container nav-container">
+
+        <div class="logo">
+          <h2>🎓 Smart Training Platform - Jeddah</h2>
+        </div>
+
+        <div class="nav-links">
+          <a href="index-en.html" class="nav-link">Home</a>
+          <a href="internships-en.html" class="nav-link active">Manual Search</a>
+          <a href="ai-recommendations-en.html" class="nav-link">Smart Recommendations</a>
+          <a href="about-us-en.html" class="nav-link">About Us</a>
+          <a href="contact-us-en.html" class="nav-link">Contact Us</a>
+
+          <a href="internships.html" class="nav-link">العربية</a>
+
+          <!-- Guest -->
+          <div class="auth-section" id="authSection">
+            <a class="btn btn-outline" href="login-en.html">Login</a>
+            <a class="btn btn-primary" href="register-en.html">Create Account</a>
+          </div>
+
+          <!-- Logged-in User -->
+          <div class="user-section hidden" id="userSection">
+            <div class="user-info" id="userInfo" role="button" tabindex="0">
+              <div class="user-avatar" id="userAvatar">
+                <svg viewBox="0 0 24 24" fill="#1e3a8a" width="22" height="22" aria-hidden="true">
+                  <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+                </svg>
+              </div>
+              <span id="userName">Username</span>
+              <span class="dropdown-arrow">▼</span>
+            </div>
+
+            <div class="user-dropdown hidden" id="userDropdown">
+              <a href="profile-en.html">Profile</a>
+              <hr>
+              <a href="#" id="logoutBtn">Logout</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Page Header -->
+    <section class="how-it-works page-header" aria-label="Opportunities Page Header">
+      <div class="container">
+        <h1 class="section-title">🔎 Manual Opportunity Search</h1>
+        <p class="page-lead">
+          Use search and filters to explore available opportunities based on location, program type, and organization type.
+        </p>
+      </div>
+    </section>
+
+    <!-- Search + Filters -->
+    <section class="search-section" aria-label="Search and Filter Opportunities">
+      <div class="container">
+
+        <div class="search-card">
+          <form action="#" method="get">
+            <div class="search-box">
+              <label class="hidden" for="searchInput">Search</label>
+              <input
+                type="text"
+                id="searchInput"
+                name="q"
+                placeholder="Search by organization or title (e.g., Software, Data, UI/UX)..."
+                class="search-input"
+                maxlength="80"
+              >
+              <button class="btn btn-primary" type="submit">
+                <span aria-hidden="true">🔍</span> Search
+              </button>
+            </div>
+
+            <div class="filters-grid">
+              <div class="filter-group">
+                <label for="cityFilter">📍 Location</label>
+                <select id="cityFilter" name="city">
+                  <option value="all">All Locations</option>
+                  <option value="jeddah">Jeddah</option>
+                  <option value="remote">Remote</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="locationTypeFilter">🏢 Work Mode</label>
+                <select id="locationTypeFilter" name="locationType">
+                  <option value="">All</option>
+                  <option value="onsite">On-site</option>
+                  <option value="remote">Remote</option>
+                  <option value="flex">Flexible</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="typeFilter">⏱️ Program Type</label>
+                <select id="typeFilter" name="internType">
+                  <option value="">All</option>
+                  <option value="coop">Cooperative Training</option>
+                  <option value="summer">Summer Training</option>
+                </select>
+              </div>
+
+              <div class="filter-group">
+                <label for="companyTypeFilter">🏭 Organization Type</label>
+                <select id="companyTypeFilter" name="companyType">
+                  <option value="">All</option>
+                  <option value="startup">Startup</option>
+                  <option value="sme">Small or Medium Enterprise</option>
+                  <option value="large">Large Organization</option>
+                  <option value="gov">Government Sector</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn btn-text" type="reset">Clear Filters</button>
+          </form>
+        </div>
+
+        <!-- Results -->
+        <section aria-label="Search Results">
+          <h2 class="section-title">Available Opportunities</h2>
+
+          <div class="internships-grid">
+
+        
+<!-- Card 1 -->
+<article class="internship-card">
+
+  <div class="internship-header">
+    <h3 class="internship-title">Cooperative Training Program</h3>
+    <p class="internship-company">Abdul Latif Jameel</p>
+  </div>
+
+  <div class="internship-meta">
+    <span class="meta-tag">On-site</span>
+    <span class="meta-tag">Cooperative Training</span>
+    <span class="meta-tag">Private Sector</span>
+  </div>
+
+  <p class="internship-description">
+    A cooperative training program designed for university students to gain practical experience in a professional environment across administrative, technical, engineering, and financial fields.
+  </p>
+
+  <div class="ai-explanation">
+    <strong>Requirements Summary:</strong> Human Resources, Sales, Information Systems, Engineering, Finance, Accounting, English, Microsoft Office, Communication Skills.
+  </div>
+
+  <div class="internship-footer">
+    <a class="btn btn-primary apply-btn protected-action" href="https://careers.alj.com/Mobility/job/Jeddah-COOP-Training/857143623/" target="_blank">Apply</a>
+    <span class="meta-tag">2 months</span>
+  </div>
+</article>
+
+<!-- Card 2 -->
+<article class="internship-card">
+  
+
+  <div class="internship-header">
+    <h3 class="internship-title">Cooperative Training Program</h3>
+    <p class="internship-company">King Abdulaziz Public Library</p>
+  </div>
+
+  <div class="internship-meta">
+    <span class="meta-tag">On-site</span>
+    <span class="meta-tag">Cooperative Training</span>
+    <span class="meta-tag">Government Sector</span>
+  </div>
+
+  <p class="internship-description">
+    This service provides university students with an opportunity to gain cooperative training experience at King Abdulaziz Public Library.
+  </p>
+
+  <div class="ai-explanation">
+    <strong>Requirements Summary:</strong> Research and Analysis, Information Organization, Communication, Teamwork, Computer Skills.
+  </div>
+
+  <div class="internship-footer">
+    <a class="btn btn-primary apply-btn protected-action" href="https://www.kapl.org.sa/e-services/53/collaborative-training" target="_blank">Apply</a>
+    <span class="meta-tag">2 months</span>
+  </div>
+</article>
+
+<!-- Card 3 -->
+<article class="internship-card">
+
+
+  <div class="internship-header">
+    <h3 class="internship-title">Co-op Training – Technical Business Development</h3>
+    <p class="internship-company">Emdad Al Khebrat (Elm)</p>
+  </div>
+
+  <div class="internship-meta">
+    <span class="meta-tag">On-site</span>
+    <span class="meta-tag">Cooperative Training</span>
+    <span class="meta-tag">Tech Sector</span>
+  </div>
+
+  <p class="internship-description">
+    A training program designed for university students in technical business development, aiming to provide practical experience in a professional environment.
+  </p>
+
+  <div class="ai-explanation">
+    <strong>Requirements Summary:</strong> Computer Science, Information Technology, Software Engineering, Management Information Systems, IT Management, English.
+  </div>
+
+  <div class="internship-footer">
+    <a class="btn btn-primary apply-btn protected-action" href="https://people-ksa.com/job/725" target="_blank">Apply</a>
+    <span class="meta-tag">4 to 7 months</span>
+  </div>
+</article>
+</div>
+          <nav class="pagination" aria-label="Pagination Navigation">
+            <button class="page-btn active" type="button">1</button>
+            <button class="page-btn" type="button">2</button>
+            <button class="page-btn" type="button">3</button>
+          </nav>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Site Footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Smart Training Platform - Jeddah</h3>
+          <p>A platform that helps students discover internship opportunities in Jeddah and build their professional future.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="index-en.html">Home</a>
+          <a href="internships-en.html">Manual Search</a>
+          <a href="ai-recommendations-en.html">Smart Recommendations</a>
+          <a href="about-us-en.html">About Us</a>
+          <a href="contact-us-en.html">Contact Us</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>📧 info@jeddah-internships.sa</p>
+          <p>📱 +966 59 447 7201</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Smart Training Platform - Jeddah | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../JS/auth.js"></script>
+  <script src="../JS/internships.js"></script>
+</body>
+</html>
