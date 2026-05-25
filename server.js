@@ -17,9 +17,13 @@ if (!fs.existsSync(uploadDir)) {
 
 const app = express();
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
-});
+let openai = null;
+
+if (process.env.OPENAI_API_KEY) {
+  openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY
+  });
+}
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
