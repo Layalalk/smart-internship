@@ -79,12 +79,8 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 
-/* Static files */
+/* Static files - all files are in the root folder */
 app.use(express.static(__dirname));
-app.use("/css", express.static(path.join(__dirname, "CSS")));
-app.use("/js", express.static(path.join(__dirname, "JS")));
-app.use("/images", express.static(path.join(__dirname, "images")));
-app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
