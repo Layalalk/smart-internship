@@ -2,10 +2,11 @@
   "name": "web-project1_2_internship",
   "version": "1.0.0",
   "description": "",
-  "main": "UJ-Internship-Platform/JS/server.js",
-  "scripts": {
-    "start": "node UJ-Internship-Platform/JS/server.js"
-  },
+ "main": "server.js",
+
+"scripts": {
+  "start": "node server.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
