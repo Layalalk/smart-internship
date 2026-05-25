@@ -1955,3 +1955,173 @@ label.upload-area:focus-within {
   margin-bottom: 1.5rem;
   text-align: right;
 }
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 95%;
+    padding: 0 15px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .hero-features {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-arrow {
+    transform: rotate(90deg);
+  }
+
+  .internships-grid,
+  .team-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .search-box {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .filters-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .auth-section,
+  .user-section {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .page-lead {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .filters-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .search-box input,
+  .search-box button,
+  .btn {
+    width: 100%;
+  }
+
+  .internship-meta {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .contact-cta-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .user-dropdown {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 1.3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .internship-card,
+  .search-card,
+  .feature-card,
+  .team-card {
+    padding: 15px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .logo h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .table {
+    min-width: 600px;
+  }
+}
