@@ -2125,3 +2125,40 @@ label.upload-area:focus-within {
     min-width: 600px;
   }
 }
+.mobile-menu-btn {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .auth-section,
+  .user-section {
+    justify-content: center;
+  }
+}
